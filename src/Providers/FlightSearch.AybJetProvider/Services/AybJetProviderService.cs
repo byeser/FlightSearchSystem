@@ -25,7 +25,7 @@ public class AybJetProviderService : IFlightProvider
 
         if (flights == null) yield break;
 
-        flights = flights.Where(x => x.DepartureTime.Date == request.DepartureDate.Date).ToList();
+        flights = flights.Where(x => x.DepartureTime.Date == request.DepartureDate.Date && x.Departure == request.Origin && x.Arrival == request.Destination).ToList();
 
         foreach (var flight in flights)
         {

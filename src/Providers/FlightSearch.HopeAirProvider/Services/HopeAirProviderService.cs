@@ -45,8 +45,8 @@ public class HopeAirProviderService : IFlightProvider
                 ProviderName = ProviderName
             });
 
-        flights = flights.Where(x => x.DepartureTime.Date == request.DepartureDate.Date).ToList();
-        
+        flights = flights.Where(x => x.DepartureTime.Date == request.DepartureDate.Date && x.Departure == request.Origin &&x.Arrival==request.Destination).ToList();
+
         foreach (var flight in flights)
         {
             if (cancellationToken.IsCancellationRequested) yield break;
