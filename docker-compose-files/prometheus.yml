@@ -1,0 +1,21 @@
+﻿
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: gateway
+    static_configs:
+      - targets:
+          - 'localhost:5000'
+  - job_name: flightsearch
+    static_configs:
+      - targets:
+          - 'localhost:5001'
+  - job_name: hopeair
+    static_configs:
+      - targets:
+          - 'localhost:5002'
+  - job_name: aybjet
+    static_configs:
+      - targets:
+          - 'localhost:5003'

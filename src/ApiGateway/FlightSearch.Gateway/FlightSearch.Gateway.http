@@ -1,0 +1,6 @@
+@FlightSearch.Gateway_HostAddress = http://localhost:5291
+
+GET {{FlightSearch.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

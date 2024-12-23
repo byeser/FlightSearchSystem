@@ -1,0 +1,6 @@
+@FlightSearch.AybJetProvider_HostAddress = http://localhost:5263
+
+GET {{FlightSearch.AybJetProvider_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+  </ItemGroup>
+
+ 
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\BuildingBlocks\FlightSearch.MessageBus\FlightSearch.MessageBus.csproj" />
+		<ProjectReference Include="..\Booking.Domain\Booking.Domain.csproj" />
+		<ProjectReference Include="..\..\FlightSearch\FlightSearch.Domain\FlightSearch.Domain.csproj" />
+	</ItemGroup>
+</Project>
