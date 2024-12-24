@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 	<ItemGroup> 
-		<ProjectReference Include="..\..\..\BuildingBlocks\FlightSearch.Shared\FlightSearch.Shared.csproj" /> 
-		<ProjectReference Include="..\..\FlightSearch\FlightSearch.Domain\FlightSearch.Domain.csproj" />
+		<ProjectReference Include="..\..\..\BuildingBlocks\FlightSearch.Shared\FlightSearch.Shared.csproj" />  
 	</ItemGroup>
 </Project>

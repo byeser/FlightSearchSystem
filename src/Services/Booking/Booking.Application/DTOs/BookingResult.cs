@@ -6,4 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Booking.Application.DTOs;
-public record BookingResult(Guid BookingId, BookingStatus Status);
+public record BookingResult
+{
+    public Guid BookingId { get; }
+    public BookingStatus Status { get; }
+
+    public BookingResult(Guid bookingId, BookingStatus status)
+    {
+        BookingId = bookingId;
+        Status = status;
+    }
+}
